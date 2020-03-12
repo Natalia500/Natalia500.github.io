@@ -20,8 +20,6 @@ $(document).ready(function(){
 
 
 
-
-
 $(function(){
   $('.slider').glide({
     autoplay: 3500,
@@ -49,6 +47,7 @@ var empty = document.getElementById("empty");
     }
 }
 
+
 function readMore1(){
 var empty1 = document.getElementById("empty1");
  var more1 = document.getElementById("more1");
@@ -64,7 +63,6 @@ var empty1 = document.getElementById("empty1");
         more1.style.display = "inline"; 
     }
 }
-
 
 
 

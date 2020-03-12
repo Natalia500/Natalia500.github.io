@@ -67,18 +67,6 @@ var empty1 = document.getElementById("empty1");
 
 
 
-/*$(document).ready(function(){
-  $('.menu').click(function(){	
-	$('nav').slideToggle(500);
-							});
- $(window).resize(function(){
-	if ($(window).width() > 768){
-		$('nav').removeAttr('style')
-		}
-  });
-});*/
-
-
 
 (function($){
   $(function() {
@@ -88,8 +76,6 @@ var empty1 = document.getElementById("empty1");
     });
     
     $('.menu__links-item').on('click', function() {
-      // do something
-
       $(this).closest('.menu')
         .removeClass('menu_state_open').find('.menu__links').slideToggle();
     });

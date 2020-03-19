@@ -206,44 +206,48 @@ body,html{
       background: url(img/bg-img-sec-two.jpg) no-repeat center center;
       @include background-size(cover);  
       height:565px;
-          .sec-two-information{
-              h2{
-                @include font(OpenSans,2.3em,#ffffff);  
-                font-weight: normal;
-              }
-              p{
-               @include font(OpenSans,0.9em,#ffffff);
-               text-align: center;
-               padding-top: 15px;
+        .sec-two-information{
+            h2{
+               @include font(OpenSans,2.3em,#ffffff);  
+               font-weight: normal;
             }
-              .button-white{
-                  text-decoration: none;
-                  outline: none;
-                  display: inline-block;
-                  @include size(250px,45px);
-                  line-height: 45px;
-                  @include border-radius(45px,45px,45px,45px);
-                  @include font(OpenSans-Bold,1em,#d85d71);
-                  text-align: center;
-                  background: white;
-                  @include box-shadow(0, 8px, 15px, rgba(0, 0, 0, .0));
-                  transition: .6s;
-                  margin: 3em 0 0 7em;
-                      &:hover{
-                        background: #e88898;
-                        box-shadow: 0 10px 15px rgba(232,136,152,.4);
-                        @include box-shadow(0, 10px, 15px, rgba(232, 136, 152, .4));
-                        color: white;
-                        transform: translateY(-3px);
-                     }
-               }
-         }  
+            p{
+             @include font(OpenSans,0.9em,#ffffff);
+             text-align: center;
+             padding-top: 15px;
+            }
+            .button-wrap {
+                text-align: center;
+                  .button-white{
+                     text-decoration: none;
+                     outline: none;
+                     display: inline-block;
+                     @include size(250px,45px);
+                     line-height: 45px;
+                     @include border-radius(45px,45px,45px,45px);
+                     @include font(OpenSans-Bold,1em,#d85d71);
+                     text-align: center;
+                     background: white;
+                     @include box-shadow(0, 8px, 15px, rgba(0, 0, 0, .0));
+                     transition: .6s;
+                     margin: 3em 0 0 0;
+                        &:hover{
+                          background: #e88898;
+                          box-shadow: 0 10px 15px rgba(232,136,152,.4);
+                          @include box-shadow(0, 10px, 15px, rgba(232, 136, 152, .4));
+                          color: white;
+                          transform: translateY(-3px);
+                      }
+                 }
+            }
+        }  
    }
    .section-three{
        display: flex;
+       align-items: center;
           .information{
              width: 45%;
-             padding: 60px 0 0 30px;
+             padding: 30px 0 30px 30px;
                 h2{
                   @include font(OpenSans-Bold,1.3em,#3a4d60);  
                   text-transform: uppercase;
@@ -254,9 +258,9 @@ body,html{
                    line-height: 30px;
                 }
                 .second-paragraph{
-                   @include font(OpenSans,0.9em,#3a4d60);     
+                   @include font(OpenSans,1.0em,#3a4d60);     
                    padding-top: 30px;
-                   line-height: 25px;
+                   line-height: 30px;
                 }
           }
     }
@@ -314,6 +318,7 @@ body,html{
                   @include box-shadow(0, 8, 15px, rgba(0, 0, 0, .1));
                   text-align: center;
                   transition: .6s;
+                  margin-bottom: 10px;
                      &:hover{
                         background: #ffffff;
                         @include box-shadow(0, 10, 15px, rgba(232,136,152,.4));
@@ -336,9 +341,10 @@ body,html{
     }
     .section-six{
         display: flex;
+        align-items: center;
            .text_about{
                width: 45%;
-               padding: 60px 0 0 30px;
+               padding: 30px 0 30px 30px;
                   h2{
                     @include font(OpenSans-Bold,1.3em,#3a4d60);
                     text-transform: uppercase;
@@ -349,15 +355,15 @@ body,html{
                       line-height: 30px;
                   }
                   .second-paragraph{
-                      @include font(OpenSans,0.9em,#3a4d60);     
+                      @include font(OpenSans,1.0em,#3a4d60);     
                       padding-top: 30px;
-                      line-height: 25px;
+                      line-height: 30px;
                  }
            }
      }
      .section-seven{
          background-color: #e7526b;
-         padding: 50px 0 150px 100px;
+         padding: 100px 0 100px 100px;
            h2{
              @include font(OpenSans-Bold,0.9em,#fceef0);
              text-transform: uppercase;   
@@ -377,7 +383,8 @@ body,html{
 }
 .footer{
    background-color: #2e3b4e;
-   padding: 40px 0 150px 0;
+   padding: 50px 0;
+   text-align: center;
       p{
        @include font(OpenSans,0.9em,#ffffff);      
        padding-left:  100px;  
@@ -557,6 +564,7 @@ body,html{
            }    
            .header-row-menu-search{
               .dropdown {
+                 position: relative;
                  display: flex;
                    .dropdown-menu-icon{
                       padding-right: 10px;
@@ -571,7 +579,7 @@ body,html{
                                display:block;
                                height:3px;
                                margin:3px 0;
-                               background:#666666;
+                               background:#eee;
                              }
                          }
                      }
@@ -582,8 +590,9 @@ body,html{
                         min-width: 180px;
                         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                         z-index: 1;
-                        margin-left: -160px;
+                        margin-left: -155px;
                         padding: 15px 0 15px 0;
+                        top: 50px;
                           ul{
                             display: flex;
                             flex-direction: column;
@@ -607,10 +616,6 @@ body,html{
                }
                .dropdown-content a:hover {
                    background-color: #ddd;
-                }
-                .dropdown:hover .dropdown-content {
-                   display: block; 
-                   margin-top: 40px;
                 }
                 .search {
                    width: 130px;
@@ -646,12 +651,14 @@ body,html{
          }
     }  
     .section-two{
+       padding: 0 15px 0 15px;
         .sec-two-information{
             h2{
-              @include font(OpenSans,2em,#ffffff);
+              @include font(OpenSans,1.8em,#ffffff);
             }
         }
     }
+    
     .section-three{
        .img-desktop{
           display: none;
@@ -724,6 +731,7 @@ body,html{
              }    
              .header-row-menu-search{
                .dropdown {
+                  position: relative;
                    display: flex;
                     .dropdown-menu-icon{
                        padding-right: 10px;
@@ -738,7 +746,7 @@ body,html{
                                 display:block;
                                 height:3px;
                                 margin:3px 0;
-                                background:#666666;
+                                background:#eee;
                              }
                          }  
                       }
@@ -749,8 +757,9 @@ body,html{
                          min-width: 180px;
                          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                          z-index: 1;
-                         margin-left: 0px;
+                         margin-left: 5px;
                          padding: 15px 0 15px 0;
+                         top: 50px;
                             ul {
                               display: flex;
                               flex-direction: column;
@@ -775,10 +784,6 @@ body,html{
                .dropdown-content a:hover {
                   background-color: #ddd;
                }
-               .dropdown:hover .dropdown-content {
-                  display: block; 
-                  margin-top: 40px;
-               } 
                .search {
                   display: none;
                 }
@@ -907,20 +912,10 @@ body,html{
      }
 }
  .footer{
-   padding: 30px 0 70px 0;
+   padding: 50px 0 50px 0;
      p{
         padding: 0 30px 0 20px;
         text-align: center; 
      }
 }  
 }
-
-
-
-
-
-
-
-
-
-

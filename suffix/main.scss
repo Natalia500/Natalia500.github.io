@@ -74,7 +74,7 @@ body{
             min-width: 250px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
-            margin-left: 20px;
+            margin: 15px 0 0 20px;
             padding: 30px 0 30px 0;
               ul{
                 li{
@@ -413,7 +413,7 @@ body{
     display: flex;
     justify-content: center;
     background-color: #000;
-    padding: 50px 0 5px 0;
+    padding: 50px 0 15px 0;
     margin-top: 100px;
       .footer-content{
            p{
@@ -432,24 +432,24 @@ body{
 .header{
    .header-main-content{
       .header-main-content-right-part{
-        .text-content{
-          .text-content-date{
+         .text-content{
+           .text-content-date{
             margin-top: 60px;
-          }
-          h2{
-          @include font(24px, kanit-medium, #ffffff, uppercase);
-            padding-top: 40px;
-          }
-          .text{
-            padding-top: 15px;
-          }
-          .button-read-more{
-            @include font(14px, kanit-medium, #ffffff, uppercase);
-            margin-top: 30px;
-        }
+            }
+            h2{
+             @include font(24px, kanit-medium, #ffffff, uppercase);
+             padding-top: 40px;
+            }
+            .text{
+              padding-top: 15px;
+            }
+            .button-read-more{
+               @include font(14px, kanit-medium, #ffffff, uppercase);
+               margin-top: 30px;
+            }
+         }
       }
-    }
-  } 
+   } 
 }
 
 .main{
@@ -996,5 +996,16 @@ body{
           margin: 30px 0 30px 0;
         }
     }   
+}
+}
+
+
+@media (max-width:767px){
+.header{
+   .header-menu{
+      .dropdown:hover .dropdown-content {
+           display: none; 
+       }
+   } 
 }
 }

@@ -548,7 +548,7 @@
               margin-left: 0px;
                  .img_cats{
                     float:none;
-                    width: 90%;
+                    width: 100%;
                  }
                  .click_here{
                         padding-top: 15px;
@@ -601,7 +601,7 @@
             width: 83%;
               .img_cats{
                  float:none;
-                 width: 93%;
+                 width: 100%;
               }
               .click_here{
                padding-top: 15px;
@@ -661,10 +661,10 @@
      @include display-second(column,center);
      padding: 15px 0 25px 0;
         .left_part{
-           width: 83%;
+           width: 85%;
             .img_cats{
                 float:none;
-                 width: 93%;
+                 width: 100%;
              }
              h2{
                font-size: 30px;
@@ -713,7 +713,7 @@
         padding: 30px 0 30px 0;
            .left-column-pet-care{
               width: 85%;
-              margin:0 0 20px 20px;
+              margin:0 0 20px 0;
                  h2{
                    padding-bottom: 10px;
                  }
@@ -727,7 +727,7 @@
             }
             .right-column-any-question{
                width: 85%;
-               margin-left: 20px;
+               margin-left: 0;
                  h4{
                    font-size: 18px;
                  }
@@ -758,7 +758,7 @@
 	      right: 0;
 	      left: 0;
 	      z-index: 1000;
-	      height: 250px;
+	      height: auto;
 	      position: absolute;
 	      top: 90px;
 	      background-color: #000;
@@ -806,7 +806,7 @@
 } 
 .footer{
    @include display-second(column,center);
-   padding: 15px 0 15px 0;
+   padding: 15px;
      p{
        text-align: center; 
        padding-left: 0;

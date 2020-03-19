@@ -251,7 +251,7 @@ body, html {
   font-family: Montserrat;
   font-size: 5.5rem;
   color: #ffffff;
-  padding: 20px 0 20px 70px;
+  padding: 20px 0 20px 65px;
   font-weight: normal;
   animation-name: sec-one-padding;
   animation-duration: 2s;
@@ -264,7 +264,7 @@ body, html {
   }
   to {
     opacity: 1;
-    padding: 20px 0 20px 70px;
+    padding: 20px 0 20px 65px;
   }
 }
 .sec-one .sec-one-our-expirience .sec-one-our-expirience-button {
@@ -304,7 +304,7 @@ body, html {
 .sec-two-images .img-balloon, .sec-two-images .img-mountains, .sec-two-images .img-palm-trees {
   position: relative;
   overflow: hidden;
-  margin: -30px 50px 0 50px;
+  margin: -30px 40px 0 40px;
   animation-name: sec-two-margin-top;
   animation-duration: 2s;
   animation-iteration-count: animation-iteration-count;
@@ -785,7 +785,7 @@ body, html {
 .section-six-our-consultants .section-six-our-consultants-information .second-row .section-six-third-column-about-consult .info-about-consultant-four, .section-six-our-consultants .section-six-our-consultants-information .second-row .section-six-fourth-column-about-consult .info-about-consultant-one, .section-six-our-consultants .section-six-our-consultants-information .second-row .section-six-fourth-column-about-consult .info-about-consultant-two,
 .section-six-our-consultants .section-six-our-consultants-information .second-row .section-six-fourth-column-about-consult .info-about-consultant-three, .section-six-our-consultants .section-six-our-consultants-information .second-row .section-six-fourth-column-about-consult .info-about-consultant-four {
   background-color: #f7f7f7;
-  padding: 20px 60px 20px 60px;
+  padding: 20px 65px 20px 65px;
 }
 .section-six-our-consultants .section-six-our-consultants-information .first-row .section-six-first-column-about-consult .info-about-consultant-one h2, .section-six-our-consultants .section-six-our-consultants-information .first-row .section-six-first-column-about-consult .info-about-consultant-two h2,
 .section-six-our-consultants .section-six-our-consultants-information .first-row .section-six-first-column-about-consult .info-about-consultant-three h2, .section-six-our-consultants .section-six-our-consultants-information .first-row .section-six-first-column-about-consult .info-about-consultant-four h2, .section-six-our-consultants .section-six-our-consultants-information .first-row .section-six-second-column-about-consult .info-about-consultant-one h2, .section-six-our-consultants .section-six-our-consultants-information .first-row .section-six-second-column-about-consult .info-about-consultant-two h2,
@@ -928,7 +928,7 @@ body, html {
 .section-six-our-consultants .section-six-our-consultants-information .section-six-first-column-about-consult,
 .section-six-our-consultants .section-six-our-consultants-information .section-six-second-column-about-consult,
 .section-six-our-consultants .section-six-our-consultants-information .section-six-third-column-about-consult {
-  margin-right: 70px;
+  margin-right: 60px;
 }
 
 .sec-seven-book-tour {
@@ -1069,7 +1069,7 @@ body, html {
   left: -5px;
 }
 .sec-eight-slider .wrapper .jcarousel-control-next {
-  right: 20px;
+  right: 15px;
 }
 
 .footer .footer-first-part {
@@ -1287,14 +1287,14 @@ body, html {
   color: #01b3a7;
 }
 
-/*  SCREEN 1250 and 1580 */
-@media screen and (min-width: 1201px) and (max-width: 1580px) {
+/*  SCREEN 1250 and 1500 */
+@media screen and (min-width: 1250px) and (max-width: 1550px) {
   .header .header-row .logo {
     margin-right: 30vh;
   }
 
   .sec-three-new-horizons {
-    justify-content: space-around;
+    justify-content: center;
   }
   .sec-three-new-horizons .img-bay {
     margin-right: 40px;
@@ -1333,24 +1333,34 @@ body, html {
     font-size: 1.1rem;
     color: #01b3a7;
   }
-}
-.section-six-our-consultants .section-six-our-consultants-information .section-six-first-column-about-consult,
+
+  .sec-four-our-service .container .personalized-matching, .sec-four-our-service .container .wide-variety, .sec-four-our-service .container .highly-service,
+.sec-four-our-service .container .support, .sec-four-our-service .container .handpicked-hotels, .sec-four-our-service .container .best-price {
+    width: 27%;
+    padding: 30px 0 30px 0;
+  }
+
+  .sec-five-hot-tours .first-hot-tour, .sec-five-hot-tours .second-hot-tour {
+    width: 87%;
+  }
+  .sec-five-hot-tours .first-hot-tour .info-about-tour, .sec-five-hot-tours .second-hot-tour .info-about-tour {
+    width: 47%;
+  }
+
+  .section-six-our-consultants .section-six-our-consultants-information .section-six-first-column-about-consult,
 .section-six-our-consultants .section-six-our-consultants-information .section-six-second-column-about-consult,
 .section-six-our-consultants .section-six-our-consultants-information .section-six-third-column-about-consult {
-  margin-right: 50px;
-}
-
-.sec-eight-slider .wrapper .jcarousel-control-next {
-  right: 5px;
-}
-
-/*  SCREEN 961 and 1200 */
-@media screen and (min-width: 961px) and (max-width: 1200px) {
-  .header .header-row {
-    justify-content: flex-start;
+    margin-right: 30px;
   }
+
+  .sec-eight-slider .wrapper .jcarousel-control-next {
+    right: 5px;
+  }
+}
+/*  SCREEN 961 and 1200 */
+@media screen and (min-width: 961px) and (max-width: 1249px) {
   .header .header-row .logo {
-    margin: 0 25vh 0 2vh;
+    margin: 0 20vh 0 2vh;
   }
   .header .header-row .header-row-about-us .hours-of-work:before {
     position: relative;
@@ -1401,7 +1411,7 @@ body, html {
   }
   .sec-three-new-horizons .basic-information {
     max-width: 50%;
-    margin: 5px 0 0 10px;
+    margin: 5px 10px 0 10px;
   }
   .sec-three-new-horizons .basic-information h1 {
     font-family: Montserrat;
@@ -1424,7 +1434,7 @@ body, html {
   }
   .sec-three-new-horizons .basic-information p {
     line-height: 25px;
-    padding-top: 20px;
+    padding-top: 15px;
   }
   .sec-three-new-horizons .basic-information .sec-three-buttons {
     display: flex;
@@ -1457,6 +1467,10 @@ body, html {
 
   .sec-seven-book-tour .book-tour-now {
     width: 60%;
+  }
+
+  .sec-eight-slider .wrapper .jcarousel-control-next {
+    right: 0;
   }
 
   .footer .footer-first-part .popular-news {
@@ -1634,6 +1648,10 @@ body, html {
 
   .sec-seven-book-tour .book-tour-now {
     width: 80%;
+  }
+
+  .sec-eight-slider .wrapper .jcarousel-control-next {
+    right: 0;
   }
 
   .footer .footer-first-part .popular-news {
@@ -1908,6 +1926,10 @@ body, html {
     font-family: Montserrat;
     font-size: 1rem;
     color: #e4ffff;
+  }
+
+  .sec-eight-slider .wrapper .jcarousel-control-next {
+    right: 0;
   }
 
   .footer .footer-first-part {
@@ -2325,6 +2347,9 @@ body, html {
     font-family: Montserrat;
     font-size: 1.8rem;
     color: #151515;
+  }
+  .sec-eight-slider .wrapper .jcarousel-control-next {
+    right: -5px;
   }
 
   .footer .footer-first-part {

@@ -635,7 +635,7 @@ body, html {
     padding: 40px 0 40px 0;
   }
   .main .sec2_main_updates .sec2_main_updates_container_right {
-    margin: 40px 0px 0 50px;
+    margin: 40px 0 0 55px;
   }
   .main .sec2_main_updates .sec2_main_updates_container_right h2 {
     margin-left: 0;
@@ -650,17 +650,9 @@ body, html {
   .main .sec2_main_updates .sec2_main_updates_container_right .display_none {
     display: none;
   }
-  .main .sec2_main_updates .sec2_main_updates_container_right .updates_recent h3:before {
-    position: relative;
-    top: 30px;
-    left: -5px;
-  }
-  .main .sec2_main_updates .sec2_main_updates_container_right .updates_category h3:before {
-    position: relative;
-    top: 30px;
-    left: -5px;
-  }
-  .main .sec2_main_updates .sec2_main_updates_container_right .updates_blog h3:before {
+  .main .sec2_main_updates .sec2_main_updates_container_right .updates_recent h3:before,
+.main .sec2_main_updates .sec2_main_updates_container_right .updates_category h3:before,
+.main .sec2_main_updates .sec2_main_updates_container_right .updates_blog h3:before {
     position: relative;
     top: 30px;
     left: -5px;

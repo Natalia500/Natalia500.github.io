@@ -59,7 +59,7 @@ body {
   min-width: 250px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  margin-left: 20px;
+  margin: 15px 0 0 20px;
   padding: 30px 0 30px 0;
 }
 .header .header-menu .dropdown-content ul li {
@@ -492,7 +492,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: #000;
-  padding: 50px 0 5px 0;
+  padding: 50px 0 15px 0;
   margin-top: 100px;
 }
 .footer .footer-content p {
@@ -1141,6 +1141,11 @@ body {
   }
   .footer .footer-content p {
     margin: 30px 0 30px 0;
+  }
+}
+@media (max-width: 767px) {
+  .header .header-menu .dropdown:hover .dropdown-content {
+    display: none;
   }
 }
 

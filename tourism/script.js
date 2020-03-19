@@ -61,3 +61,9 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
+window.onresize = function(event) {
+    if(window.innerWidth > 960){
+        this.document.getElementById("mySidenav").style.width = "";
+    }
+}

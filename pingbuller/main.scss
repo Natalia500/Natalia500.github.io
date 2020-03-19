@@ -652,7 +652,7 @@ body{
         flex-direction: column;
         padding: 40px 0 40px 0;
           .sec2_main_updates_container_right{
-             margin: 40px 0px 0 50px;
+             margin: 40px 0 0 55px;
                h2{
                  margin-left: 0;
                }
@@ -666,12 +666,8 @@ body{
                .display_none {
                   display: none;
                }
-               .updates_recent h3:before{
-                  @include position(relative,30px,-5px);
-               } 
-               .updates_category h3:before{
-                  @include position(relative,30px,-5px);
-               }
+               .updates_recent h3:before,
+               .updates_category h3:before,
                .updates_blog h3:before{
                   @include position(relative,30px,-5px);
                }

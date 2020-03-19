@@ -563,7 +563,7 @@
   }
   .main .sec-one .left_part .img_cats {
     float: none;
-    width: 90%;
+    width: 100%;
   }
   .main .sec-one .left_part .click_here {
     padding-top: 15px;
@@ -613,7 +613,7 @@
   }
   .main .sec-one .left_part .img_cats {
     float: none;
-    width: 93%;
+    width: 100%;
   }
   .main .sec-one .left_part .click_here {
     padding-top: 15px;
@@ -669,11 +669,11 @@
     padding: 15px 0 25px 0;
   }
   .main .sec-one .left_part {
-    width: 83%;
+    width: 85%;
   }
   .main .sec-one .left_part .img_cats {
     float: none;
-    width: 93%;
+    width: 100%;
   }
   .main .sec-one .left_part h2 {
     font-size: 30px;
@@ -721,7 +721,7 @@
   }
   .main .sec-three .left-column-pet-care {
     width: 85%;
-    margin: 0 0 20px 20px;
+    margin: 0 0 20px 0;
   }
   .main .sec-three .left-column-pet-care h2 {
     padding-bottom: 10px;
@@ -735,7 +735,7 @@
   }
   .main .sec-three .right-column-any-question {
     width: 85%;
-    margin-left: 20px;
+    margin-left: 0;
   }
   .main .sec-three .right-column-any-question h4 {
     font-size: 18px;
@@ -763,7 +763,7 @@
     right: 0;
     left: 0;
     z-index: 1000;
-    height: 250px;
+    height: auto;
     position: absolute;
     top: 90px;
     background-color: #000;
@@ -815,7 +815,7 @@
   .footer {
     flex-direction: column;
     align-items: center;
-    padding: 15px 0 15px 0;
+    padding: 15px;
   }
   .footer p {
     text-align: center;

@@ -281,7 +281,7 @@ body,html{
          }
          h1{
             @include font(Montserrat,5.5rem,#ffffff);
-            padding: 20px 0 20px 70px;
+            padding: 20px 0 20px 65px;
             font-weight: normal;
             @include animation(sec-one-padding,2s,1); 
              @keyframes sec-one-padding {   
@@ -291,19 +291,19 @@ body,html{
                  }   
                  to {
                   opacity: 1; 
-                  padding: 20px 0 20px 70px;
+                  padding: 20px 0 20px 65px;
                  }   
              } 
          }
          .sec-one-our-expirience-button{
-            @include info-block(inline-block,none,none,bold,pointer);
-            height: 55px;
+             @include info-block(inline-block,none,none,bold,pointer);
+             height: 55px;
 	         line-height: 55px;
 	         background: #01b3a7;
 	         padding: 0px 25px 0 25px;
 	         box-sizing: border-box;
-            @include transition(all 1.5s ease);
-            margin: 20px 0 0 70px;
+             @include transition(all 1.5s ease);
+             margin: 20px 0 0 70px;
                &:hover{
                    background:#7fc370;
                }
@@ -323,9 +323,9 @@ body,html{
        .img-balloon, .img-mountains, .img-palm-trees{
           position: relative;
           overflow:hidden;
-          margin: -30px 50px 0 50px;
+          margin: -30px 40px 0 40px;
           @include animation(sec-two-margin-top,2s,1); 
-           @keyframes sec-two-margin-top {   
+          @keyframes sec-two-margin-top {   
                from { 
                   margin-top: -70px
                }   
@@ -656,7 +656,7 @@ body,html{
                   .info-about-consultant-one, .info-about-consultant-two,
                   .info-about-consultant-three, .info-about-consultant-four{
                       background-color: #f7f7f7;
-                      padding: 20px 60px 20px 60px;
+                      padding: 20px 65px 20px 65px;
                          h2{
                            padding: 10px 0 10px 0;
                            text-align: center;
@@ -691,7 +691,7 @@ body,html{
         .section-six-first-column-about-consult, 
         .section-six-second-column-about-consult,
         .section-six-third-column-about-consult{ 
-            margin-right: 70px;
+            margin-right: 60px;
         }
     }
 }
@@ -782,7 +782,7 @@ body,html{
                 display: block;
                 max-width: 100%;
             }
-/** Carousel Controls **/
+        /** Carousel Controls **/
            .jcarousel-control-prev,
            .jcarousel-control-next {
                position: absolute;
@@ -803,7 +803,7 @@ body,html{
                left: -5px;
             }
            .jcarousel-control-next {
-               right: 20px;
+               right: 15px;
            }
      }
 }       
@@ -970,8 +970,8 @@ body,html{
 
 
 
-/*  SCREEN 1250 and 1580 */
-@media screen and (min-width: 1201px) and (max-width: 1580px){
+/*  SCREEN 1250 and 1500 */
+@media screen and (min-width: 1250px) and (max-width: 1550px){
 .header{
    .header-row{
         .logo{
@@ -981,7 +981,7 @@ body,html{
 }
 
 .sec-three-new-horizons{
-    justify-content:space-around;
+    justify-content:center;
        .img-bay{
            margin-right: 40px;
            @include animation( sec-one-margin-right,2s,1);
@@ -1017,16 +1017,34 @@ body,html{
                 }
           }
      }
+
+.sec-four-our-service{
+   .container{
+        .personalized-matching, .wide-variety, .highly-service,
+        .support, .handpicked-hotels, .best-price{
+            width:27%;
+            padding: 30px 0 30px 0;
+        }
+    }
 }
 
+.sec-five-hot-tours{
+    .first-hot-tour, .second-hot-tour{
+       width:87%;
+        .info-about-tour{
+            width: 47%;
+        } 
+    }
+}  
+    
 .section-six-our-consultants{
-   .section-six-our-consultants-information{
-      .section-six-first-column-about-consult, 
-      .section-six-second-column-about-consult,
-      .section-six-third-column-about-consult{ 
-          margin-right: 50px;
-      }
-   }
+    .section-six-our-consultants-information{
+        .section-six-first-column-about-consult, 
+        .section-six-second-column-about-consult,
+        .section-six-third-column-about-consult{ 
+            margin-right: 30px;
+        }
+    }
 }
 
 .sec-eight-slider{
@@ -1036,17 +1054,17 @@ body,html{
          }
      }
 }        
-
+}
 
 
 
 /*  SCREEN 961 and 1200 */
-@media screen and (min-width: 961px) and (max-width: 1200px){
+@media screen and (min-width: 961px) and (max-width: 1249px){
 .header{
     .header-row{
-      justify-content:flex-start;
+      //justify-content:flex-start;
         .logo{
-            margin: 0 25vh 0 2vh;
+            margin: 0 20vh 0 2vh;
          }
          .header-row-about-us{
             .hours-of-work{
@@ -1099,7 +1117,7 @@ body,html{
     }
     .basic-information{
         max-width:50%;
-        margin: 5px 0 0 10px;
+        margin: 5px 10px 0 10px;
           h1{
             @include font(Montserrat,2.1rem,#000000); 
           }
@@ -1119,7 +1137,7 @@ body,html{
            }
           p{
             line-height: 25px;
-            padding-top: 20px;
+            padding-top: 15px;
           }
           .sec-three-buttons{
             display: flex;
@@ -1164,7 +1182,15 @@ body,html{
     .book-tour-now{
         width: 60%;
     }
-}  
+} 
+
+.sec-eight-slider{
+   .wrapper {
+       .jcarousel-control-next {
+          right: 0;
+       }
+   }
+} 
     
 .footer{
     .footer-first-part{
@@ -1338,7 +1364,15 @@ body,html{
         width: 80%;
     }
 }  
-    
+
+.sec-eight-slider{
+   .wrapper {
+       .jcarousel-control-next {
+          right: 0;
+       }
+   }
+} 
+
 .footer{
     .footer-first-part{
          .popular-news{
@@ -1575,7 +1609,15 @@ body,html{
              }
       }
 } 
-    
+
+.sec-eight-slider{
+   .wrapper {
+       .jcarousel-control-next {
+          right: 0;
+       }
+   }
+} 
+
 .footer{
    .footer-first-part{
        flex-wrap: wrap;
@@ -1955,6 +1997,11 @@ body,html{
 .sec-eight-slider{
    h2{
      @include font(Montserrat,1.8rem,#151515);
+   }
+   .wrapper {
+      .jcarousel-control-next {
+          right: -5px;
+      }
    }
 }
 

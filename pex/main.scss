@@ -112,6 +112,7 @@ body,html{
                             a{  
                              text-decoration: none;
                              color: #edecec;
+                             font-family:OpenSans; 
                                 &:hover{
                                   border-bottom: 2px solid #ffffff;
                                   padding-bottom: 27px;
@@ -122,7 +123,7 @@ body,html{
                   }
                  .search {
 	                position:relative;
-                   width: 200px;
+                    width: 200px;
                  }
                  .search input {
                    @include size(90%,35px);

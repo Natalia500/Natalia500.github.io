@@ -53,6 +53,7 @@ body, html {
 .header .header-row .header-row-menu-search .dropdown-content ul li a {
   text-decoration: none;
   color: #edecec;
+  font-family: OpenSans;
 }
 .header .header-row .header-row-menu-search .dropdown-content ul li a:hover {
   border-bottom: 2px solid #ffffff;

@@ -19,11 +19,6 @@ const Main = ({ searchValue }) => {
   const currentPage = useSelector((state) => state.filter.currentPage);
   const { pizzaItems, status } = useSelector((state) => state.pizza);
 
-  //const [pizzaItems, setPizzaItems] = useState([]);
-  //const [isLoading, setIsLoading] = useState(true);
-  //const [categoryId, setCategoryId] = useState(0);
-  // const [currentPage, setCurrentPage] = useState(1);
-  //const [sortType, setSortType] = useState({ name: 'title (ASK)', sortProperty: '-title' });
 
   const onClickCatagory = (id) => {
     dispatch(setCategoryId(id));
